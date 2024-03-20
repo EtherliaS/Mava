@@ -12,7 +12,7 @@ namespace Mava
 {
     class Mava_Prime
     {
-        public const string version = "1.0.1";
+        public const string version = "1.0.3";
         public const string cfgpath = "Config.json";
         public const string mappath = "Mapping.json";
         public const string soundspath = @"Sounds/";
@@ -51,7 +51,7 @@ namespace Mava
                 Console.WriteLine("Mapping.json not found, loading defaults");
             }
             Console.Write("Recognizer initialization... ");
-            Recognizer = new Recognizer();
+            Recognizer = new();
             Console.Write("Done!\nController initialization... ");
             KBController = new();
             Console.Write("Done!\nSoundNotifier initialization... ");
@@ -59,7 +59,7 @@ namespace Mava
             Console.WriteLine("Done!");
             Console.WriteLine("Loaded {0} sounds.\n", Notifier.Count);
             //meme part
-            Random random = new Random();
+            Random random = new();
             var tmp = Directory.GetFiles(@"Memes/", "*.mp3");
             if (tmp.Length > 0 ) Notifier.PlaySound(@tmp[random.Next(1, tmp.Length)]);
         }

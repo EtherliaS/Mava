@@ -41,6 +41,7 @@ namespace Mava
                     if (Mava_Prime.Mapping.MappingList.Count == 0)
                     {
                         Console.WriteLine("No commands detected");
+                        running = false;
                         return;
                     }
                     else Console.WriteLine("Processing {0} commands", Mava_Prime.Mapping.MappingList.Count);

@@ -11,14 +11,14 @@
     <Description>Macros voice assistant</Description>
     <RepositoryUrl>https://github.com/EtherliaS/Mava</RepositoryUrl>
     <PackageProjectUrl>https://github.com/EtherliaS/Mava</PackageProjectUrl>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.3</AssemblyVersion>
+    <FileVersion>1.0.3</FileVersion>
     <Company>Shadow Garden</Company>
     <Authors>EtherliaS</Authors>
     <Title>Mava</Title>
 	<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
 	<IsPublishable>False</IsPublishable>
-	<Version>1.0.1</Version>
+	<Version>1.0.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
