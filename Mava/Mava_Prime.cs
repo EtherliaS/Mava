@@ -12,7 +12,7 @@ namespace Mava
 {
     class Mava_Prime
     {
-        public const string version = "1.0.3";
+        public const string version = "1.0.5";
         public const string cfgpath = "Config.json";
         public const string mappath = "Mapping.json";
         public const string soundspath = @"Sounds/";
