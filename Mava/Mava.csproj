@@ -5,6 +5,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Trimming>full</Trimming>
+    <PublishAot>False</PublishAot>
+    <Copyright>Nobody cares</Copyright>
+    <Description>Macros voice assistant</Description>
+    <RepositoryUrl>https://github.com/EtherliaS/Mava</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/EtherliaS/Mava</PackageProjectUrl>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <Company>Shadow Garden</Company>
+    <Authors>EtherliaS</Authors>
+    <Title>Mava</Title>
+	<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+	<IsPublishable>False</IsPublishable>
+	<Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>

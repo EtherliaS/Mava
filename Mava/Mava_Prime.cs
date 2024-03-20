@@ -12,7 +12,7 @@ namespace Mava
 {
     class Mava_Prime
     {
-        public const string version = "1.0.0";
+        public const string version = "1.0.1";
         public const string cfgpath = "Config.json";
         public const string mappath = "Mapping.json";
         public const string soundspath = @"Sounds/";
@@ -25,6 +25,8 @@ namespace Mava
         static async Task LoadDependencies()
         {
             Console.Clear();
+            Directory.CreateDirectory("Sounds/");
+            Directory.CreateDirectory("Memes/");
             Console.WriteLine("Loading files...");
             FileInfo fileInfoconf = new("Config.json");
             FileInfo fileInfomap = new("Mapping.json");
@@ -59,7 +61,7 @@ namespace Mava
             //meme part
             Random random = new Random();
             var tmp = Directory.GetFiles(@"Memes/", "*.mp3");
-            Notifier.PlaySound(@tmp[random.Next(1, tmp.Length)]);
+            if (tmp.Length > 0 ) Notifier.PlaySound(@tmp[random.Next(1, tmp.Length)]);
         }
         static async Task Main(string[] args)
         {
